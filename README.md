@@ -1,3 +1,3 @@
-# Encryption test
+# Encryption Module
 
 An example module that can encrypt and decrypt a string using the RSA cypher.
