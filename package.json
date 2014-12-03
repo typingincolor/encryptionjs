@@ -2,6 +2,9 @@
   "name": "encryption",
   "version": "0.0.1",
   "main": "lib/encrypt.js",
+  "scripts": {
+    "test": "mocha spec"
+  },
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:typingincolor/encryption-spike.git"
@@ -9,6 +12,7 @@
   "author": "Andrew Braithwaite",
   "license": "ISC",
   "dependencies": {
+    "nconf": "^0.7.1",
     "q": "^1.1.2"
   },
   "devDependencies": {
