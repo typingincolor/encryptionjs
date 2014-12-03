@@ -43,4 +43,13 @@ describe('Encryption', function() {
       expect(err).to.equal('Error opening Private Key rubbish');
     }).done(done);
   });
+
+  it('decryption should fail the string to be decrypted is gibberish', function(done) {
+    e.setPrivateKey(private_key);
+    decrypt('rubbish').then(function(decrypted_txt) {
+      assert.fail('should return an error');
+    }, function(err) {
+      expect(err).to.equal('RSA operation error');
+    }).done(done);
+  });
 });
